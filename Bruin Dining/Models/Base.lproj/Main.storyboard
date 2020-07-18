@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UaW-DE-DsG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4QX-0F-onm">
+            <objects>
+                <navigationController id="UaW-DE-DsG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="nqP-Iz-IfN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="35"/>
+                            <color key="textColor" red="0.97254901960784312" green="0.88235294117647056" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wLZ-ui-B5g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hms-6A-kj8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2742" y="125"/>
+        </scene>
+        <!--Main Menu Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Main Menu Controller" customClass="MainMenuController" customModule="Bruin_Dining" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Aov-BR-6F7">
+                                <rect key="frame" x="32" y="15" width="350" height="744"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mue-eG-mSM">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="67"/>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="C5B-fi-hAF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="Bruin Plate">
+                                            <color key="titleColor" red="0.97254901960784312" green="0.88235294117647056" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bPlatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQX-rK-HCn"/>
+                                            <segue destination="LLx-DN-NMC" kind="show" id="RkT-SR-IrC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib3-Mk-do3" userLabel="Covel Commons">
+                                        <rect key="frame" x="0.0" y="97" width="350" height="66.5"/>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="Pdr-5O-c9I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="Covel Commons">
+                                            <color key="titleColor" red="0.97254901960784312" green="0.88235294117647056" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="covelPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rhf-WJ-8dc"/>
+                                            <segue destination="YHa-ud-hDy" kind="show" id="nvJ-3D-wbq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSD-Eu-ebo" userLabel="De Neve">
+                                        <rect key="frame" x="0.0" y="193.5" width="350" height="67"/>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="0rp-HF-21p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="De Neve">
+                                            <color key="titleColor" red="0.97254901960784312" green="0.88235294117647056" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deNevePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMM-4X-k9I"/>
+                                            <segue destination="urd-dX-8l7" kind="show" id="KBo-Lm-Nab"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGo-5g-PgV" userLabel="FEAST">
+                                        <rect key="frame" x="0.0" y="290.5" width="350" height="66.5"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="tb5-kb-b27"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="FEAST at Rieber">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.88235294119999996" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deNevePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kEK-oL-a5w"/>
+                                            <segue destination="QVc-rw-sgN" kind="show" id="HYL-Ui-PuZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eag-dc-C36" userLabel="Bruin Cafe">
+                                        <rect key="frame" x="0.0" y="387" width="350" height="67"/>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="WOZ-sI-7tZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="Bruin Cafe">
+                                            <color key="titleColor" red="0.97254901960784312" green="0.88235294117647056" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bCafePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZIs-Lw-Cu9"/>
+                                            <segue destination="eBc-1M-fvW" kind="show" id="wxZ-lC-6Pc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8i-kB-urk" userLabel="Cafe 1919">
+                                        <rect key="frame" x="0.0" y="484" width="350" height="66.5"/>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="hE1-b3-wEL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="Cafe 1919">
+                                            <color key="titleColor" red="0.97254901960784312" green="0.88235294117647056" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cafe1919Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CbL-HR-ACh"/>
+                                            <segue destination="kvD-oF-T5J" kind="show" id="R5f-ZO-V6M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BG-M0-Qdl" userLabel="Rendezvous">
+                                        <rect key="frame" x="0.0" y="580.5" width="350" height="67"/>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="V9c-GM-0zF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="Rendezvous">
+                                            <color key="titleColor" red="0.97254901960784312" green="0.88235294117647056" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rendePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aME-69-iA6"/>
+                                            <segue destination="3NW-6C-zwM" kind="show" id="jj2-5g-1iK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcZ-8u-Fg0" userLabel="The Study at Hedrick">
+                                        <rect key="frame" x="0.0" y="677.5" width="350" height="66.5"/>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="0Z3-v9-bGg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                                        <state key="normal" title="The Study at Hedrick">
+                                            <color key="titleColor" red="0.97254901960784312" green="0.88235294117647056" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="studyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IiW-0V-3y7"/>
+                                            <segue destination="c19-46-45b" kind="show" id="gJd-ou-cgK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mue-eG-mSM" firstAttribute="height" secondItem="Ib3-Mk-do3" secondAttribute="height" id="GDn-8k-hJl"/>
+                                    <constraint firstItem="fGo-5g-PgV" firstAttribute="height" secondItem="eag-dc-C36" secondAttribute="height" id="IzX-Sm-Vba"/>
+                                    <constraint firstItem="mSD-Eu-ebo" firstAttribute="height" secondItem="fGo-5g-PgV" secondAttribute="height" id="KFe-v1-Gma"/>
+                                    <constraint firstItem="fGo-5g-PgV" firstAttribute="height" secondItem="eag-dc-C36" secondAttribute="height" id="Wht-d1-1ps"/>
+                                    <constraint firstItem="eag-dc-C36" firstAttribute="height" secondItem="O8i-kB-urk" secondAttribute="height" id="aiD-kE-cw0"/>
+                                    <constraint firstItem="Ib3-Mk-do3" firstAttribute="height" secondItem="mSD-Eu-ebo" secondAttribute="height" id="dQm-DU-5Sb"/>
+                                    <constraint firstItem="0BG-M0-Qdl" firstAttribute="height" secondItem="dcZ-8u-Fg0" secondAttribute="height" id="gSF-u2-W8X"/>
+                                    <constraint firstItem="O8i-kB-urk" firstAttribute="height" secondItem="0BG-M0-Qdl" secondAttribute="height" id="hom-lL-aNe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.89803921568627454" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Aov-BR-6F7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="3iU-DZ-MgD"/>
+                            <constraint firstItem="Aov-BR-6F7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4sB-YD-hlZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Aov-BR-6F7" secondAttribute="bottom" constant="15" id="9Md-va-bov"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bruin Dining" id="dDR-2E-Eym" customClass="Main">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="vbg-R5-C1A">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="cKQ-1J-mgp" kind="show" id="kkN-xM-MR1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bCafeButton" destination="eag-dc-C36" id="nEX-R6-ZXr"/>
+                        <outlet property="bPlateButton" destination="Mue-eG-mSM" id="bGn-0p-XTO"/>
+                        <outlet property="cafe1919Button" destination="O8i-kB-urk" id="VOw-pm-0fc"/>
+                        <outlet property="covelButton" destination="Ib3-Mk-do3" id="VXx-1z-fr2"/>
+                        <outlet property="deNeveButton" destination="mSD-Eu-ebo" id="Fjz-m3-Re8"/>
+                        <outlet property="feastButton" destination="fGo-5g-PgV" id="SDW-hL-QoB"/>
+                        <outlet property="rendeButton" destination="0BG-M0-Qdl" id="jpt-Sa-hXa"/>
+                        <outlet property="studyButton" destination="dcZ-8u-Fg0" id="KKx-6j-lvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1465" y="125"/>
+        </scene>
+        <!--About Me Controller-->
+        <scene sceneID="DcM-Rx-Lk5">
+            <objects>
+                <viewController id="cKQ-1J-mgp" userLabel="About Me Controller" customClass="AboutMeController" customModule="Bruin_Dining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tNe-MO-vPr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YOb-AJ-oGy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About the Creators" id="vmw-Ep-sdQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXC-yL-wLE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2077" y="599"/>
+        </scene>
+        <!--Cafe 1919 Menu Controller-->
+        <scene sceneID="Pgp-6L-bFF">
+            <objects>
+                <viewController id="kvD-oF-T5J" userLabel="Cafe 1919 Menu Controller" customClass="Cafe1919Controller" customModule="Bruin_Dining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b9G-Bn-dOb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="W7p-lI-6ID"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Café 1919" id="XLm-ye-B8Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqQ-6P-TJg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="-125"/>
+        </scene>
+        <!--Study Menu Controller-->
+        <scene sceneID="qwH-dn-dKi">
+            <objects>
+                <viewController id="c19-46-45b" userLabel="Study Menu Controller" customClass="StudyController" customModule="Bruin_Dining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F7s-TD-ngo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ANk-aV-Qw6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Study at Hedrick" id="KLi-gH-16M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBz-yZ-7fl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="630"/>
+        </scene>
+        <!--Rende Menu Controller-->
+        <scene sceneID="XiJ-bY-xyq">
+            <objects>
+                <viewController id="3NW-6C-zwM" userLabel="Rende Menu Controller" customClass="RendeController" customModule="Bruin_Dining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2gW-BZ-El4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gan-Qb-3IS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rendezvous" id="jvB-el-2bp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36M-JY-Uxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2077" y="-125"/>
+        </scene>
+        <!--De Neve Menu Controller-->
+        <scene sceneID="TPv-PT-mzc">
+            <objects>
+                <viewController id="urd-dX-8l7" userLabel="De Neve Menu Controller" customClass="DeNeveController" customModule="Bruin_Dining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bo2-Qk-8El">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IoP-aU-gcc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="De Neve" id="ceT-Of-ozS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPj-RU-PEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="-907"/>
+        </scene>
+        <!--BPlate Menu Controller-->
+        <scene sceneID="CKe-m4-qdn">
+            <objects>
+                <viewController id="LLx-DN-NMC" userLabel="BPlate Menu Controller" customClass="BPlateController" customModule="Bruin_Dining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qwc-OE-k4Y" customClass="BPlate">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="X9t-pl-13T"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bruin Plate" id="1D4-lm-g6x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s0E-tz-rKA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2328" y="-907"/>
+        </scene>
+        <!--Covel Menu Controller-->
+        <scene sceneID="QCh-0Q-FH6">
+            <objects>
+                <viewController id="YHa-ud-hDy" userLabel="Covel Menu Controller" customClass="CovelController" customModule="Bruin_Dining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g2P-Ct-dnV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="x32-sg-8kb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Covel Commons" id="V1t-1N-m7J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6c-4r-kd8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1246" y="-907"/>
+        </scene>
+        <!--FEAST Menu Controller-->
+        <scene sceneID="86X-wd-ogg">
+            <objects>
+                <viewController id="QVc-rw-sgN" userLabel="FEAST Menu Controller" customClass="FEASTController" customModule="Bruin_Dining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QgR-mk-bAf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Bfi-P9-DXH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FEAST  at Rieber" id="eLh-h3-mr2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1b4-wc-GsP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="-907"/>
+        </scene>
+        <!--BCafe Menu Controller-->
+        <scene sceneID="2VP-Qs-Yot">
+            <objects>
+                <viewController id="eBc-1M-fvW" userLabel="BCafe Menu Controller" customClass="BCafeController" customModule="Bruin_Dining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3gt-RU-mJx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MCm-5a-KPz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bruin Café" id="IMu-mv-b2M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdw-nN-on8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2078" y="-907"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.97254901959999995" green="0.88235294119999996" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
